@@ -1,0 +1,26 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "A terminal based (CLI) application allowing users to easily create and manage a list of categorized notes",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-advanced-javascript-Riva/notes.git"
+  },
+  "author": "Riva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/401-advanced-javascript-Riva/notes/issues"
+  },
+  "homepage": "https://github.com/401-advanced-javascript-Riva/notes#readme",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
+}
