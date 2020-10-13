@@ -41,7 +41,7 @@ Install minimist: `npm install minimist`
  The MongoDB module exports MongoClient, and that’s what we’ll use to connect to a MongoDB. Import MongoClient
 
  `const {MongoClient} = require('mongodb');`
-- Confirm that `index.js` as entrypoint for this app
+
 
 ### To run:
 - On the command line, run:
