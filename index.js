@@ -16,5 +16,10 @@ const input = new Input(process.argv[2], process.argv[3]);
 
 const result = input.parseInput(process.argv[2], process.argv[3]);
 if(result !== 'Invalid input') {
-
+  const newNoteAdded =  new Notes(process.argv[2], process.argv[3]);
+  const result2 = newNoteAdded.execute(process.argv[2], process.argv[3]);
+} else {
+    console.log('Not a valid command! Try again.');
 }
+
+
