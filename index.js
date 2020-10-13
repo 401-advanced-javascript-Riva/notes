@@ -7,7 +7,7 @@ console.log('starting index.js ');
 
 const Input = require('./lib/input.js');
 const Notes = require('./lib/notes.js');
-
+const argv = require('minimist')(process.argv.slice(2));
 
 
 console.log('minimist', minimist.argv);
