@@ -16,25 +16,32 @@
 - PORT - To come
 - MONGODB_URI - To come
 
-**How to initialize/run the application:**
+### How to initialize/run the application:
+**The following software is required to be installed on your system:**
+- Node.js
+ Install npm: `npm i -g` and then use  `npm init`
 
-- Install npm: `npm install` and use  `npm init`
-- Confirm that `index.js` as entrypoint for this app
+ - MongoDB
+ - The MongoDB Node.js Driver allows you to easily interact with MongoDB databases from within Node.js applications. You'll need the Driver to connect to your database
+ Install MongoDB: `npm install mongodb`
+ - The easiest way to get started with MongoDB is to use Atlas, MongoDB’s fully-managed database-as-a-service. Check out the docs [here](https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb--how-to-get-connected-to-your-database)
+
 - Install minimist: `npm install minimist`
 - Load the minimist module in index.js:
  `const minimist = require('minimist')`
+- Confirm that `index.js` as entrypoint for this app
 
-**To run:**
+### To run:
 - On the command line, run:
 
 `node --add or -a 'New Note'`
 
 
-**How to use your library**
+###H ow to use your library
 
-**Tests:** To come
+### Tests: (To come)
 
-**How do you run tests?**
+## How do you run tests? (To come)
 
 
 
