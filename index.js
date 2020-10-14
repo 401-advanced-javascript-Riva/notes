@@ -13,7 +13,7 @@ const minimist = require('minimist');
 let args = minimist(process.argv.slice(2));
 
 console.log(args);
-const input = new Input(process.argv);
+const input = new Input(args);
 
 //if input action is valid, then create new note
 //note has an id and a payload which will be added as text
