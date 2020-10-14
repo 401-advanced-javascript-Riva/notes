@@ -15,6 +15,18 @@
 1. As a user, I want to be able to call the application using command line standard syntax, indicating the text of a note I wish to add so that the system will eventually be able to save this note.
 2. As a user, I expect that the application will confirm my intent.
 
+**Phase 3 Requirements**
+
+Added persistence layer to allow users to save notes to a database, organize them into categories, view, and delete them.
+
+1. As a user, I want my notes to be saved in a database so that I can retrieve them later.
+2. As a user, I want to categorize my notes so that I can more easily find them.
+3. As a user, I want to be able to see a list of my notes so that I can manage them.
+4. As a user, I want to be able to delete a note
+mongodb+srv://Riva:Multipass12%21@cluster0.opi9k.mongodb.net/Notesy?retryWrites=true&w=majority
+
+
+
 -----------------------
 
 ## Setup
