@@ -48,10 +48,13 @@ Install minimist: `npm install minimist`
 
  `const minimist = require('minimist');`
 
- The MongoDB module exports MongoClient, and that’s what we’ll use to connect to a MongoDB. Import MongoClient
+- The MongoDB module exports MongoClient, and that’s what we’ll use to connect to a MongoDB. Import MongoClient
 
  `const {MongoClient} = require('mongodb');`
 
+- Load the mongoose module
+
+`const mongoose = require('mongoose');`
 
 ### To run:
 - On the command line, run:
