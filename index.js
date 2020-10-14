@@ -7,21 +7,22 @@ console.log('starting index.js ');
 
 const Input = require('./lib/input.js');
 const Notes = require('./lib/notes.js');
+const minimist = require('minimist');
 
+// This slices off the first two indexes and is the method for minimist
+let args = minimist(process.argv.slice(2));
 
+console.log(args);
+//args is an object that holds whatever command and arguments are passed in
+const input = new Input(args);
 
-console.log('minimist', minimist.argv);
-console.log(process.argv);
+//if input action is valid, then create new note
+//note has an id and a payload which will be added as text
 
-
-const input = new Input(process.argv[2], process.argv[3]);
-
-const result = input.parseInput(process.argv[2], process.argv[3]);
-  if(result !== 'Invalid input') {
-     const newNoteAdded =  new Notes(process.argv[2], process.argv[3]);
-     newNoteAdded.execute(process.argv[2], process.argv[3]);
+  if(input.valid()) {
+     new Notes(input);
   } else {
-    console.log('Not a valid command! Try again.');
- }
+      throw new Error('invalid action');
+  }
 
 

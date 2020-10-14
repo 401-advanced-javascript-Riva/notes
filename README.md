@@ -5,6 +5,13 @@
 
 **A terminal based (CLI) application allowing users to easily create and manage a list of categorized notes**
 
+**Phase 1 Requirements:**
+
+1. As a user, I want to be able to call the application using command line standard syntax, indicating the text of a note I wish to add so that the system will eventually be able to save this note.
+2. As a user, I expect that the application will confirm my intent.
+
+**Phase 2 Requirements:**
+
 1. As a user, I want to be able to call the application using command line standard syntax, indicating the text of a note I wish to add so that the system will eventually be able to save this note.
 2. As a user, I expect that the application will confirm my intent.
 
@@ -34,6 +41,9 @@ The MongoDB Node.js Driver allows you to easily interact with MongoDB databases 
 
 Install minimist: `npm install minimist`
 
+- Jest (for testing)
+`node install  --save-dev jest`
+
 - Load the minimist module:
 
  `const minimist = require('minimist');`
@@ -49,19 +59,24 @@ Install minimist: `npm install minimist`
 `node --add or -a 'New Note'`
 
 
-### How to use your library
+### How to use your library(n/a)
 
-### Tests: (To come)
+### Tests:
 
-### How do you run tests? (To come)
+**To Run tests, run the commands:**
 
+`npm test input.test.js`
+`npm test notes.test.js`
 
-
-### Phase1: Application Setup:
-
-```
-const Input = require('./lib/input.js');
-const Notes = require('./lib/notes.js');
-let minimist = require('minimist')
+**Add the following section to your package.json:**
 
 ```
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+
+```
+![URL](./uml.png)
+
