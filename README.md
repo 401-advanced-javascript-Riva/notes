@@ -59,7 +59,7 @@ Install minimist: `npm install minimist`
 `node --add or -a 'New Note'`
 
 
-### How to use your library
+### How to use your library(n/a)
 
 ### Tests:
 
