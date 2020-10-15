@@ -1,5 +1,5 @@
 //crud operations
 const mongoose = require('mongoose');
-const NoteModel = require('../model/model.js');
+const NotesSchema = require('./notes-schema.js');
 
 

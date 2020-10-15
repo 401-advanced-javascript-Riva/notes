@@ -23,7 +23,13 @@ Added persistence layer to allow users to save notes to a database, organize the
 2. As a user, I want to categorize my notes so that I can more easily find them.
 3. As a user, I want to be able to see a list of my notes so that I can manage them.
 4. As a user, I want to be able to delete a note
-mongodb+srv://Riva:Multipass12%21@cluster0.opi9k.mongodb.net/Notesy?retryWrites=true&w=majority
+
+**Phase 4 Requirements**
+
+From a business/user perspective, the requirements remain unchanged from the previous lab
+
+1. Users will be able to create and save notes to a database, organize them into categories, view, and delete them.
+2. Upon completion of this phase, your Notesy application should be complete and ready for final delivery
 
 
 
@@ -32,8 +38,6 @@ mongodb+srv://Riva:Multipass12%21@cluster0.opi9k.mongodb.net/Notesy?retryWrites=
 ## Setup
 
 
-- PORT - To come
-- MONGODB_URI - To come
 
 ### How to initialize/run the application:
 **The following software is required to be installed on your system:**
@@ -52,9 +56,6 @@ The MongoDB Node.js Driver allows you to easily interact with MongoDB databases 
 - Minimist
 
 Install minimist: `npm install minimist`
-
-- Jest (for testing)
-`node install  --save-dev jest`
 
 - Load the minimist module:
 
@@ -77,6 +78,14 @@ Install minimist: `npm install minimist`
 ### How to use your library(n/a)
 
 ### Tests:
+
+- Jest (for testing)
+`node install  --save-dev jest`
+
+- Load `Supergoose` module
+- supergoose is used for connecting to fake Mongo DB in order to make sure that code can connect mongo to test test environment
+`const supergoose = require(@code-fellows/supergoose');
+
 
 **To Run tests, run the commands:**
 
