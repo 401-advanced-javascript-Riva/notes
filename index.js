@@ -33,9 +33,9 @@ const input = new Input(args);
 //note has an id and a payload which will be added as text
 
   if(input.valid()) {
-     new Notes(input);
-  } else {
-      throw new Error('invalid action');
-  }
+    new Notes(input);
+} else {
+    console.log('Invalid input');
+}
 
 
