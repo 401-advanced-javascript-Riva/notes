@@ -9,9 +9,9 @@ class NotesCollection {
 
     async create(args) {
         // console.log(`Added note: ${args.payload}`);
-        let newNote = new NoteModel({ text: args.payload , category: args.category});
+        let newNote = new this.model({ text: args.payload , category: args.category});
         console.log(newNote);
-        await newNote.save();
+        return await newNote.save();
 
     };
 
