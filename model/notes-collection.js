@@ -2,6 +2,10 @@
 
 //crud operations
 //collection isn't created
+
+ /**This Class constructs an instance of a collection
+  *
+  */
 class NotesCollection {
     constructor(model){
         this.model = model;

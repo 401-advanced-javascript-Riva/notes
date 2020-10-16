@@ -29,8 +29,10 @@ mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser:true, useUnifiedTopol
 
 //args is an object that holds whatever command and arguments are passed in
 const input = new Input(args);
-//if input action is valid, then create new note
-//note has an id and a payload which will be added as text
+/*
+- if input action is valid, then create new note
+- note has an id and a payload which will be added as text
+*/
 
   if(input.valid()) {
     new Notes(input);
