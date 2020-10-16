@@ -1,7 +1,7 @@
 'use strict'
 
 //crud operations
-//collection isn't created
+//TODO:collection isn't created, fix this ASAP
 
  /**This Class constructs an instance of a collection
   *
