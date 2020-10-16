@@ -1,7 +1,7 @@
 'use strict'
 
 //crud operations
-
+//collection isn't created
 class NotesCollection {
     constructor(model){
         this.model = model;
