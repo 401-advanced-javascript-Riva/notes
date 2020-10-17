@@ -1,7 +1,10 @@
 'use strict'
 
+const Notes = require("../lib/notes");
+const NoteModel2 = require('../model/model.js');
+
 //crud operations
-//TODO:collection isn't created, fix this ASAP
+
 
  /**This Class constructs an instance of a collection
   *
@@ -22,9 +25,9 @@ class NotesCollection {
     async delete(args) {
         // When something is added into database, ID is automatically added
         // referring back to schema
-        await NoteModel.findByIdAndDelete(args.payload, function (err) {
+        return await NoteModel2.findByIdAndDelete(args.id, function (err) {
             if(err) console.log('No deletion made',err);
-            console.log("Successful deletion");
+            // console.log("Successful deletion");
         });
     }
 
