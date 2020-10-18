@@ -1,7 +1,7 @@
 'use strict'
 
 const Notes = require("../lib/notes");
-const NoteModel2 = require('../model/model.js');
+const NoteModel = require('../model/model.js');
 
 //crud operations
 
@@ -22,24 +22,27 @@ class NotesCollection {
 
     };
 
-    async delete(args) {
+    async delete(id) {
         // When something is added into database, ID is automatically added
         // referring back to schema
-        return await NoteModel2.findByIdAndDelete(args.id, function (err) {
-            if(err) console.log('No deletion made',err);
-            // console.log("Successful deletion");
+        console.log('attempting to delete not with id', id)
+        return await NoteModel.findByIdAndDelete(id, function (err) {
+            if (err) {
+                console.log('No deletion made',err);
+            } else {
+                console.log('no error on delete');
+            }
         });
     }
 
     async get(args) {
-        console.log('in if', args);
         if(!args) {
             const noteList2 = await NoteModel.find({});
-            return console.log(noteList2);
+            return noteList2;
         } else {
             console.log('category provided', args);
             const noteList = await NoteModel.find({category:args});
-            return console.log(noteList);
+            return noteList;
         }
     }
 }
