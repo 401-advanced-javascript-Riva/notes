@@ -47,10 +47,3 @@ describe('testing collections model delete method', () => {
 });
 
 
-describe('testing collections model get method', () => {
-    it('Opon add()schema is returned to user with an object with an ID)', () => {
-     return new Notes({ _id: 1, text: 'Added note' }).execute({ action: 'add', payload:'water succulents'}).then(result => {
-          expect(result.text).toEqual('water succulents');
-      });
-    });
-  });
