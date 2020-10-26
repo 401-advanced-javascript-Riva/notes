@@ -14,17 +14,11 @@ let args = minimist(process.argv.slice(2));
 //loading mongoose module
 const mongoose = require('mongoose');
 
-
-
-
- //Connect to Database
+//Connect to Database
 mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser:true, useUnifiedTopology: true})
             //better to use debug module rather than console.log
     .then(() => console.log('Connected to MongoDB...'))
     .catch(err => console.error('Could not connect to MongoDB...',err));
-
-
-
 
 
 //args is an object that holds whatever command and arguments are passed in
@@ -39,5 +33,3 @@ const input = new Input(args);
 } else {
     console.log('Invalid input');
 }
-
-

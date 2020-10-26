@@ -5,7 +5,6 @@ const NoteModel = require('../model/model.js');
 
 //crud operations
 
-
  /**This Class constructs an instance of a collection
   *
   */
